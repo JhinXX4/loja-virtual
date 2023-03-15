@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+:root{
+    --navbar-bg: #434343;
+    --navbar-color: #fff;
+    --navbar-active-bg: #ffd374;
+    --navbar-active-color: #000;
+    --navbar-hover-bg: #2d2d2d;
+    --header-bg: #ffb7b7;
+    --button-primary-bg: #94ff5b;
+    --button-warning-bg: #ffec1d;
+    --button-danger-bg: #ff2727;
+    --text-black-color: #000;
+    --header-h1-color: #000;
+    --button-add-cart: #428bff;
+    --newsletter-input-bg: #e3e3e3;
+    --placeholder-color: #000;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    width: 100%;
+    height: 3em;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul > li{
+    display: inline;
+    list-style: none;
+}
+
+a{
+    color: var(--navbar-color);
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+ul > li >a:hover:not(a.active){
+    background-color: var(--navbar-hover-bg);
+}
+
+.active{
+   border-bottom: 2px solid var(--navbar-active-bg);
+}
+
+.user-menu > a{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-menu > a >span{
+    font-size: 0.6em;
+}
+
+header {
+    height: 80vh;
+    background-color: var(--header-bg);
+    background-image: url(img/img.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.button{
+    background-color: var(--navbar-active-color);
+    box-shadow: #434343 3px 2px 8px;
+    font-size: 1em;
+    padding: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.button:hover{
+    filter: brightness(80%);
+}
+
+.button-primary{
+    background-color: var(--button-primary-bg);
+    color: var(--text-black-color);
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+.header-description {
+    max-width: 400px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 20px;
+    font-size: 1em;
+}
+
+hgroup > h1 {
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: var(--header-h1-color);
+}
+
+hgroup > h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#ofertas >h1 {
+    line-height: 25px;
+    font-size: 2em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#ofertas > .lista-ofertas{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    box-shadow: #434343 3px 5px 10px;
+    border-radius: 5%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.card > img {
+    width: 300px;
+}
+
+.card > h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card > span {
+   font-weight: bold;
+
+}
+
+.group-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.favorito-button{
+    border: 2px solid var(--button-danger-bg);
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 5px;
+    color: var(--button-danger-bg)
+}
+
+.card-button{
+    background-color: var(--button-add-cart);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.card-button:hover{
+    filter: brightness(80%);
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#newsletter > h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#newsletter > form > input {
+    border: none;
+    background-color: var(--newsletter-input-bg);
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#newsletter > form > input::-webkit-input-placeholder{
+    color: var(--placeholder-color, #000);
+    font-weight: bold;
+}
+
+#newsletter > form > input::-moz-placeholder{
+    color: var(--placeholder-color,#000);
+    font-weight: bold;
+}
+
+#newsletter > form > button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-color);
+    margin-top: 15px;
+    min-height: 27vh;
+}
+
+div.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: var(--navbar-active-color);
+}
+
+.social-media{
+    float: right;
+}
+
+.footer-section{
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sobre-nos{
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 300px;
+}
+
+.links-uteis{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-uteis > h2{
+    margin-bottom: 5px;
+}
+
+.links-uteis > a{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.links-uteis > a:hover{
+    filter: brightness(80%);
+}
+
+.payment-methods{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-methods > .payments{
+    align-self: flex-end;
+    float: right;
+    max-width: fit-content;
+}
+
+.payment-methods > .payments >img{
+    max-width: 50px;
+}
+
+.tooltip > .tooltip-text{
+    visibility: hidden;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-color);
+    text-align: center;
+    border-radius: 7px;
+
+    z-index: 1;
+    position: absolute;
+}
+
+.tooltip:hover > .tooltip-text{
+    visibility: visible;
+    transition: visibility 0.3s ;
+}

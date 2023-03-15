@@ -1,0 +1,123 @@
+@import url(index.css);
+
+:root{
+    --produto-color: #c3c3c3;
+    --cinza-1: #e6e5e5;
+    --cinza-2: #adadad;
+}
+
+ #produto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+
+ .produto{
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+ }
+
+ .produto >main{
+    display: flex;
+    margin-top: 15px;
+ }
+
+ .produto > main >aside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+
+.produto > main > aside >img{
+    max-width: 80px;
+    border-radius: 5px;
+    border: 1px solid #e6e5e5;
+} 
+
+.produto > main > aside>img.active{
+    border: 1px solid #70f8ff;
+}
+
+ hgroup > h1{
+    margin-bottom: 5px;
+ }
+
+ hgroup > h4{
+    font-weight: 300;
+    color: var(--produto-color);
+    font-size: 1em;
+ }
+
+ #produto > aside{
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ #produto > aside > .interaçao{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+ }
+
+ #produto > aside > .interaçao > a{
+    border: 1px solid var(--cinza-1);
+    color:var(--text-black-color)
+ }
+
+.preço{
+    display: flex;
+    flex-direction: column;
+}
+
+.preço > span {
+    font-size: 2em;
+}
+
+.preço > .discount-price{
+    color: var(--cinza-1);
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+.product-actions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.product-actions > .product-button{
+    background-color: var(--button-primary-bg);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.product-actions > .product-button:hover{
+    filter: brightness(80%);
+}
+
+.recomendados{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recomendados > h2{
+    color: var(--cinza-2);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.recomendados > .card {
+    margin-left: 0px;
+}
