@@ -76,7 +76,7 @@ ul > li >a:hover:not(a.active){
 header {
     height: 80vh;
     background-color: var(--header-bg);
-    background-image: url(img/img.webp);
+    background-image: url(../img/img.webp);
     background-position: right;
     background-repeat: no-repeat;
 }
