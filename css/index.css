@@ -1,32 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-:root{
-    --navbar-bg: #434343;
-    --navbar-color: #fff;
-    --navbar-active-bg: #ffd374;
-    --navbar-active-color: #000;
-    --navbar-hover-bg: #2d2d2d;
-    --header-bg: #ffb7b7;
-    --button-primary-bg: #94ff5b;
-    --button-warning-bg: #ffec1d;
-    --button-danger-bg: #ff2727;
-    --text-black-color: #000;
-    --header-h1-color: #000;
-    --button-add-cart: #428bff;
-    --newsletter-input-bg: #e3e3e3;
-    --placeholder-color: #000;
-}
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-}
+@import url(vars.css);
 
 nav{
     width: 100%;

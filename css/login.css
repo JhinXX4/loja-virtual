@@ -1,11 +1,5 @@
-@import url("index.css");
-
-:root{
-    --login-grodient-point1: #e2a013;
-    --login-gradient-point2: #eb1923;
-    --login-gradient-point3: #000000;
-    --login-gradient-point4: #000000;
-}
+@import url(vars.css);
+@import url(form.css);
 
 body{
     display: flex;
@@ -25,33 +19,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
     min-height: 250px;
-}
-
-.form-group{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-
-.form-group > input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--newsletter-input-bg);
-    margin-top: 5px;
-}
-
-.button-login{
-    padding: 8px;
-    border-radius: 7px;
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    float: right;
-
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
 }
 
 .login-footer{

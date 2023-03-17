@@ -1,0 +1,28 @@
+
+.form-group{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.form-group > input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--newsletter-input-bg);
+    margin-top: 5px;
+}
+
+.button-login, .button{
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    float: right;
+    cursor: pointer;
+
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
