@@ -109,4 +109,10 @@ nav {
    font-size: .6em;
 }
 
+footer{
+    text-align: center;
+    background-color: black;
+    color: var(--navbar-color);
+    padding: 10px 0;
+}
 
