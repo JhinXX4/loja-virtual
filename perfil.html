@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,29 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/perfil.css">
 </head>
+
 <body>
-<nav>
-    <h1>Minha loja</h1>
-    <div class="user-menu">
-        <a href="perfil.html">
-            <i class="fa fa-user"></i>
-            <span>Perfil</span>
-        </a>
-        <a href="#">
-            <i class="fa fa-heart"></i>
-            <span>Favoritos</span>
-        </a>
-        <a href="checkout.html">
-            <i class="fa fa-shopping-cart"></i>
-            <span>Carrinho</span>
-        </a>
-    </div>
-</nav>
+    <nav>
+        <h1>Minha loja</h1>
+        <div class="user-menu">
+            <a href="perfil.html">
+                <i class="fa fa-user"></i>
+                <span>Perfil</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-heart"></i>
+                <span>Favoritos</span>
+            </a>
+            <a href="checkout.html">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Carrinho</span>
+            </a>
+        </div>
+    </nav>
     <section class="user-details">
         <h1>Meu perfil</h1>
         <aside class="user-profile">
-            <img src="/loja virtual/img/youser.png" class="user-img">
+            <img src="img/youser.png" class="user-img">
             <span>Jhin</span>
             <a href="#editar">Editar</a>
         </aside>
@@ -37,7 +39,7 @@
             <form action="" id="edit-form">
                 <div class="form-group">
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email" id="email"/>
+                    <input type="text" name="email" id="email" />
                 </div>
                 <button class="button-login">Salvar
                     <i class="fa fa-floppy-o"></i>
@@ -45,46 +47,88 @@
             </form>
 
             <div class="collapse">
-                <a class="button collapse-button">Endereço</a>
+
+                <input type="checkbox" class="collapse-button" id="endereco-button" />
+                <label for="endereco-button">
+                    Endereço
+                    <i class="fa fa-chevron-down"></i>
+                </label>
                 <form id="form-endereco">
                     <div class="form-group">
                         <label for="rua">Rua</label>
-                        <input type="text" name="rua"
-                           id="rua"/>
+                        <input type="text" name="rua" id="rua" />
                     </div>
 
-            
-                <div class="form-group">
-                    <label for="numero">Numero</label>
-                    <input type="text" name="numero"
-                       id="numero"/>
-                </div>
 
-                <div class="form-group">
-                    <label for="cep">Cep</label>
-                    <input type="text" name="cep"
-                       id="cep"/>
-                </div>
+                    <div class="form-group">
+                        <label for="numero">Numero</label>
+                        <input type="text" name="numero" id="numero" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" name="bairro"
-                       id="bairro"/>
-                </div>
+                    <div class="form-group">
+                        <label for="cep">Cep</label>
+                        <input type="text" name="cep" id="cep" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade"
-                       id="cidade"/>
-                </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="estado">Estado</label>
-                    <input type="text" name="estado"
-                       id="estado"/>
-                </div>
-            </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" />
+                    </div>
+                    <button class="button-login">Salvar
+                        <i class="fa fa-floppy-o"></i>
+                    </button>
             </form>
+        </div>
+        <div class="collapse">
+            <input type="checkbox" class="collapse-button" id="pagamento-button"/>
+            <label for="pagamento-button">
+                Dados de Pagamento
+                <i class="fa fa-chevron-down"></i>
+            </label>
+            <form action="" id="form-pagamento">
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" />
+                </div>
+
+                <div class="form-group">
+                    <libel for="nome-cartao">Nome Impresso no cartão</libel>
+                    <input type="text" name="nome-cartao"
+                    id="nome-cartao" />
+                </div>
+                
+                <div class="form-group">
+                    <label form="cartao-numero">Numero do cartão</label>
+                    <input type="number" name="cartao-numero"
+                    id="cartao-cartao" />
+                </div>
+
+                <div class="form-group">
+                    <label form="cvv">CVV</label>
+                    <input type="number" name="cvv"
+                    id="cvv" />
+                </div>
+
+                <div class="form-group">
+                    <label form="validade-cartao">Validade</label>
+                    <input type="text" name="validade-cartao"
+                    id="validade-cortao">
+                    </div>
+                    <button class="button-login">Salvar
+                        <i class="fa fa-floppy-o"></i>
+                    </button>
+            </form>
+        </div>
         </main>
     </section>
     <footer>
@@ -93,4 +137,5 @@
         </p>
     </footer>
 </body>
+
 </html>
