@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalize sua compra</title>
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>
-        <h1>Minhas Lojas</h1>
 
-        <h2>Finalize a compra (<a href="#1items"> 1 item</a>)</h2>
+<body onload="main()">
+    <header>
+        <h1>Minha Loja</h1>
+
+        <h2>Finalizar a compra (<a href="#items">1 item</a>)</h2>
 
         <i class="fa fa-lock"></i>
     </header>
     <section>
         <main>
             <div class="steps">
-                <h2>Endereço de entregas</h2>
-                <p>Rua K, Numero x, Bairro: WayV Cidade e cep</p>
+                <h2>Endereço de entrega</h2>
+                <p>Rua tal, Número tal, Bairro tal Cidade e cep</p>
+                <a href="">Alterar</a>
             </div>
             <div class="steps">
-                <h2>Metodos de pagamentos</h2>
-                <div class="pagamentos">
-                    <img src="/img/master.png" width="40px" alt="">
-                    MasterCard (Credito) <span> Termina em 1453</span>
+                <h2>Métodos de pagamentos</h2>
+                <div class="pagamento">
+                    <img src="imgs/master.png" width="40px" alt="">
+                    MasterCard (Crédito) <span>Termina em 1234</span>
                 </div>
-                <a>Alterar</a>
+                <a href="">Alterar</a>
             </div>
             <div class="steps" id="items">
                 <h2>Itens para envio</h2>
-                <div class="items-cotainer">
+                <div class="items-container">
                     <div class="item">
-                    <img src="/img/JBL_JR310_Product Image_Hero_Red.webp"/>
-                    <h3>Fone Bluetooth</h3>
-                    <span>Qtd: 1</span>
-                    <span class="preço">R$ 450,50</span> 
-                </div>
                     </div>
+                </div>
                 <button class="finalizar-pedido">Finalizar Pedido</button>
             </div>
         </main>
@@ -48,19 +47,23 @@
             <div class="resumo">
                 <h3>Resumo do Pedido</h3>
                 <div class="detalhe">
-                     <p>Itens:</p>
-                     <p>R$ 450,50</p>
+                    <p>Itens:</p>
+                    <p id="itens-total"></p>
                 </div>
                 <div class="detalhe">
                     <p>Frete:</p>
-                    <p>R$50,00</p>
+                    <p id="frete-total"></p>
                 </div>
             </div>
             <div class="total-pedido">
                 <h3>Total do Pedido</h3>
-                <h3>R$500,49</h3>
+                <h3 id="pedido-total"></h3>
             </div>
         </aside>
     </section>
+    <footer>
+        &copy; Minha Loja - Todos os direitos reservados
+    </footer>
+    <script type="text/javascript" src="js/checkout.js"></script>
 </body>
 </html>
